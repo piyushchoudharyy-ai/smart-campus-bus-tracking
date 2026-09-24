@@ -1,0 +1,16 @@
+{
+  "name": "smart-campus-bus-tracking",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hardware-free, Real-time Smart Campus Bus Tracking System",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "start": "npm --prefix server start",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "test:e2e": "node test_e2e.js"
+  }
+}
